@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* main image and the heading */
+
+.sub-header-5{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.819), rgba(91, 94, 8, 0.751)), url(Images/wilpattu\ national\ park\ main\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header-5 h1{
+    margin-top: 50px;
+    font-size: 34px;
+}
+
+.yala-top{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.yala-top h2{
+    color: #d7d7d7;
+    font-weight: 600;
+    margin: 30px 0;
+    margin-bottom: 45px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.heading-2 h2{
+    color: rgb(14, 93, 14);
+}
+.heading h2{
+    text-align: center;
+    color: rgb(210, 210, 210);
+
+}
+
+.yala-top p{
+    color: #bab7b7;
+    padding: 0;
+    text-align: justify;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    animation-delay: 0.5s;
+}
+.sec-1 p{
+    color: rgb(107, 103, 103);
+
+}
+.sec-1 p{
+    color: rgb(107, 103, 103);
+
+}
+
+/* adding styles to the div and the section 02 */
+
+.sec-2{
+    background-image: url(Images/wilpattu\ section\ image\ new.jpg);
+    background-size: cover;
+    width: 90%;
+    margin: 40px 30px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius:50px;
+    box-shadow: -12px 20px 20px rgba(0, 0, 0, 0.379);
+    
+}
+
+.sec-3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.432), rgba(59, 58, 35, 0.115)), url(Images/section\ 03\ wilpattu.jpg);
+    margin-top: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+/* yala image gallery */
+
+.yala-gallery{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    
+
+}
+.yala-gallery p{
+    color: #908a8a;
+    font-size: 20px;
+}
+.img-gallery-yala{
+    width: 100%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.img-gallery-yala img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.wilpattu img:hover{
+    transform: scale(1.1) rotate(-2deg);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(0, 0, 0, 0.488);
+}
+
+/* animation for the text  */
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.color{
+    color: rgba(255, 255, 255, 0.447);
+}
+
+.section1{
+    color: rgb(180, 223, 228);
+}
+
+
+/* END OF THE WEBSITE | PRAVEEN FERNANDO | CB011670 | APIIT */

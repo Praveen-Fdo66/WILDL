@@ -1,0 +1,899 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/*Styles in header section, main background image*/
+
+.header {
+    min-height: 100vh ;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(3, 52, 28, 0.7)), url(Images/Main\ image\ forrest.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*---------------styles of navigation bar------------*/
+nav{
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*------------Main logo---------*/
+
+nav img{
+    width: 90px;
+}
+
+/*-------------------Styles of navigation bar- positioning and adding text styles to nav bar--------------------*/
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 9px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+
+/*-----------------Adding animaation to the navigation bar (Hover effect)-----------------*/
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(4, 154, 59) ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+/*-----------------Main text styling (H1 and p)--------------*/
+.text-box{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+    animation-delay: 0.5s;
+}
+
+/*------------------------Styles of the main button and adding hover effect-------------------------*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+    
+}
+.hero-btn:hover{
+    border: 1px solid green;
+    background: green;
+    transition: 1s;
+
+}
+
+nav .fa{
+    display: none;
+}
+
+/*-----------------Media queries for responsive design (Mobile view)--------------------*/
+@media(max-width: 1265px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .text-box p{
+        text-align: center;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+
+/*------------------Toggle manu (hambuger menu) Styling and adding the functionality------------------*/
+    .nav-links{
+        position: fixed;
+        background: rgba(45, 83, 45, 0.559);
+        backdrop-filter: blur(10px);
+        box-shadow: -1px 0 10px rgba(0, 0, 0, 0.304);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+
+    }
+}
+/*---------------------Sub-Section 01 (Elephant img and 2 paras)-------------------------*/
+.row {
+    display: flex;        
+    flex-direction: row;  
+    font-size: 30px;      
+    text-align: center;
+    column-gap: 15px;   
+ }
+    
+
+.sub-sec{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+}
+.elephant-col{
+    
+    padding: 10px;
+    flex: 50%;
+}
+
+.elephant-col img{
+    width: 100%;
+    padding: 10px;
+    flex: 50%;
+   
+   
+    
+}
+.sub-sec h1{
+    padding-top: 0%;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+.sub-sec p{
+    padding: 15px 0px 25px;
+    font-size: 14px;
+    text-align: justify;
+    color: gray;
+}
+
+/*---------------------Creating a button for more information-------------------*/
+.btn-2{
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(38, 145, 120);
+    color: rgb(255, 255, 255);
+    
+
+}
+.btn-2:hover{
+    color: white;
+}
+
+
+/*---------------------Sub-Section 02 (Leopard img and 2 paras)-------------------------*/
+.leopard-col{
+    
+    
+    padding: 10px;
+    flex: 50%;
+}
+
+.leopard-col img{
+    width: 80%;
+    padding: 10px;
+    flex: 50%;
+    
+}
+
+/*---------------------Sub-Section 03(Birds img and 2 paras)-------------------------*/
+.birds-col{
+    
+    
+    padding: 10px;
+    flex: 50%;
+}
+
+.birds-col img{
+    width: 100%;
+    padding: 10px;
+    flex: 50%;
+    
+}
+
+/*------Footer-------*/
+footer{
+    background-color: #111;
+    width: 100%;
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+    font-size: 9px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.adjust{
+    width: 18px;
+    text-align: center;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: white;
+    border-radius: 50%;
+}
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+/*----Hover effect for social icons---*/
+
+.socialicons a:hover{
+    background-color: #111;
+    transition: 0.5s;    
+}
+.socialicons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+/*----Hover effect for social icons END---*/
+
+/*----------Footer navigation----------*/
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footernav ul li a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.footernav ul li a:hover{
+    opacity: 1;
+}
+
+/*----------Footer navigation END----------*/
+
+/*----------Footer Bottom COPYRIGHT----------*/
+.footterbottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footterbottom p{
+    color: white;
+    font-family: "open Sans", sans-serif;
+    opacity: 0.4;
+    font-size: 10px ;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*----------Footer Bottom COPYRIGHT END----------*/
+
+/*--------Footer END----------*/
+
+/*-----------------Unorderd list of relevant content------*/
+
+
+.content ul{
+    display: block;
+    justify-content: left;
+
+}
+.content ul li{
+    text-align: left;
+}
+.content ul li a{
+    color: rgb(5, 0, 0);
+    margin: 10px;
+    font-size: 13px;
+    opacity: 0.8;
+    text-decoration: none;
+    letter-spacing: 2px;
+;
+
+
+    
+}
+/*---------Ordered list of relevant content---------*/
+.content ol{
+    display: block;
+    margin: 5px 0;
+    
+
+}
+.content ol li {
+
+    margin: 10px;
+    font-size: 13px;
+    opacity: 1;
+    text-align: left;
+}
+.content ol li a{
+    color: rgb(5, 0, 0);
+    margin: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.7;
+    letter-spacing: 2px;
+
+
+
+}
+.two{
+    display: flex;        
+    flex-direction: row;  
+    font-size: 30px;      
+    text-align: center;
+    column-gap: 100px;   
+     
+}
+/*---------Media query for deckstop screens-----------*/
+@media (min-width: 768px){
+    .sub-sec h1 {
+        font-size: 40px ;
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .two{
+        column-gap: 700px;
+    }
+}
+/*---------Media query for tablet screens------------*/
+@media (max-width: 1023px){
+    .sub-sec h1 {
+        font-size: 30px ;
+    }
+    
+}
+/*----------Media query for mobile screens-----------*/
+@media (max-width: 767px){
+    .row {
+      flex-direction: column;
+    }
+    .sub-sec h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+/*media query for relevant content lists UL and OL*/
+    .content{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+
+/*-----------Page 2 styles start- Introduction to the wild life sri lanka-------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(3, 52, 28, 0.7)), url(Images/pg2\ main\ image.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 50px;
+    font-size: 34px;
+}
+/*--------Introduction Content-----*/
+
+.intro-content{
+    width: 85%;
+    margin: auto;
+    margin-left: 80px;
+    margin-top: 40px;
+    padding: 60px 0;
+}
+
+/*----------------Introduction page left column styles---------------- */
+
+.intro-left{
+    flex-basis: 65%;
+
+}
+.intro-left img{
+    width: 100%;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+}
+.intro-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+    font-size: 30px;
+    text-align: left;
+}
+.intro-left p {
+    color: #8d8282;
+    padding: 0;
+    text-align: justify;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.citation{
+    color: #111;
+}
+.link{
+    font-size: 12px;
+}
+/*----------------Introduction page left column styles END---------------- */
+
+/*----------------Introduction page right column styles---------------- */
+.intro-right{
+    flex-basis: 50%;
+
+
+}
+.intro-right h3{
+    background: rgb(4, 79, 94);
+    width: 92%;
+    color: #e6e6e6;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 18px;
+}
+.intro{
+    column-gap: 40px;
+}
+
+
+.location iframe{
+    width: 92%;
+}
+@media (max-width: 1023px){
+    .intro-content{
+        margin-left: 35px;
+    }
+}
+@media(max-width: 700px){
+    .intro-content{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .sub-header h1{
+        font-size: 26px;
+    }
+    .intro-left h2{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+.location img{
+    margin-top: 50px;
+    width: 100%;
+    border-top-left-radius: 20px ;
+    border-bottom-right-radius: 20px;
+}
+.location h6{
+    font-size: 10px;
+}
+/*----------------Introduction page right column styles END---------------- */
+
+/*--------Introduction Content END-----*/
+
+/*--------Table styles start--------*/
+.table-box{
+     margin: 50px auto;
+     margin-top: 100px;
+}
+
+.table-row{
+    display: table;
+    width: 90%;
+    margin: 10px auto;
+    margin-right: 20px;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 12px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.304);
+
+}
+.table-cell{
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding: 40px 40px;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.table-head{
+    background: #055840;
+    box-shadow: none;
+    color: white;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.last-cell{
+    border-right: none;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 30px;
+    font-weight: 800;
+}
+.table-footer{
+    text-align: center;
+    margin-left: 90px;
+}
+.last-cell img{
+    width: 90%;
+    border-radius: 10px;
+    
+}
+
+.table-cell p{
+     font-size: 15px;
+}
+.align{
+    text-align: left;
+}
+/*-----------Table styles END-------------*/
+/*-----------page 2 END----------------*/
+
+/*-----------Page 3 styles start- Department of wildlife conservation-------------*/
+
+
+.sub-header-2{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.819), rgba(70, 74, 0, 0.7)), url(Images/pg\ 3\ main\ image\ elephants.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header-2 h1{
+    margin-top: 50px;
+    font-size: 34px;
+}
+
+.top{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.top h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+    margin-bottom: 45px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top p{
+    color: #8d8282;
+    padding: 0;
+    text-align: justify;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+@media(max-width: 700px){
+    .top h2{
+        font-size: 22px;
+        text-align: center;
+
+    }
+    .sub-header-2 h1{
+        font-size: 26px;
+    }
+        }
+    
+    .top p{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+
+@media (max-width: 1023px){
+    .top h2{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.img-gallery{
+    width: 100%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.img-gallery img:hover{
+    transform: scale(0.8) ;
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(0, 0, 0, 0.488);
+}
+iframe{
+    width: 100%;
+    margin-top: 30px;
+}
+.contact-info{
+    display: inline-block;
+    font-size: 18px;
+    padding: 20px;
+    margin-left: -21px;
+}
+
+/*-------------------------- Page 4 Sri Lankan Leopard ----------------*/
+.sub-header-3{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.819), rgba(107, 65, 0, 0.652)), url(Images/page\ 4\ main\ image.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header-3 h1{
+    margin-top: 50px;
+    font-size: 34px;
+}
+.new1 p{
+    line-height: 26px;
+    color: rgba(201, 196, 196, 0.881);
+}
+.new1 h1{
+    font-size: 28px;
+    color: white;
+}
+
+/* --------- Adding a full background image for the whole 3 sections (Sl leopard page) ---------- */
+
+
+.sub-header-4{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.819), rgba(2, 1, 1, 0.652)), url(Images/animals\ page\ main.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-4 h1{
+    margin-top: 50px;
+    font-size: 34px;
+}
+
+.fullbg{
+    background-image: linear-gradient(rgba(28, 25, 20, 0.638),#111), url(Images/section03\ SL\ leopard.jpg);
+    background-position: center;
+    background-size: contain;
+    
+      
+}
+/* --------- Adding a full background image for the whole 3 sections (Animals in sri lanka page) ---------- */
+.animalsPg{
+    background-image: linear-gradient(rgba(28, 25, 20, 0.638),#111), url(Images/bg\ img\ animals\ in\ sl\ new2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+      
+}
+@media(max-width: 767px){
+    .sub-header-3 h1{
+        font-size: 26px;
+        margin-top: 30px;
+        padding: 2rem;
+    }
+    .sub-header-4 h1{
+        margin-top: 100px;
+        font-size: 26px;
+    }
+}
+
+.underImg{
+    margin-left: 16px;
+
+}
+.underImg h1{
+    margin-top: 35px;
+}
+.highlight{
+    color: rgb(255, 0, 0);
+}
+.btnBorder{
+    border-radius: 20px;
+    border-color: black;
+    background: rgb(145, 124, 38);
+    
+}
+
+.slanimals{
+    color: rgb(130, 182, 136);
+}
+.border-radius img{
+    border-radius: 20px;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.newsletter {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .newsletter h3 {
+    margin-bottom: 9px;
+    color: #d6d4d4;
+    
+  }
+  
+  #newsletterForm {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #email {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #dd6b1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color:#a84105;
+}
+
+.dash{
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #066306;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button[type="button"]:hover {
+    background-color:#45b20a;
+}
+
+.login-btn{
+    width: 90px;
+    height: 40px;
+    font-size:  14px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    
+    border-radius: 4px;
+    padding: 0px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: -5s;
+}
+
+.login-btn:hover {
+    background: #fff;
+    color: #162938;
+
+}
+
+#saveButton{
+    width: 90px;
+    height: 40px;
+    font-size:  14px;
+    background: transparent;
+    border: 2px solid rgb(61, 61, 61);
+    outline: none;
+    
+    border-radius: 4px;
+    padding: 0px;
+    color: #ec5e05;
+    font-weight: 500;
+    cursor: pointer;
+    transition: -5s;
+}
+
+#saveButton:hover{
+        background: #fff;
+    color: #162938;
+}

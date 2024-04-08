@@ -1,0 +1,37 @@
+[
+{
+      "heroText": "Wild Life of Sri Lanka",
+      "heroDescription": "Sri Lanka's wildlife: Elephants, leopards, vibrant birdlife, and marine wonders. Explore diverse ecosystems in national parks like Yala and Wilpattu. From lush jungles to coastal treasures, it's a captivating blend of nature's wonders.",
+      "btnUrl": "inroduction.html",
+      "btnUrl2": "login.html"
+      
+
+      
+},
+
+{
+  "title": "The Majestic Giant",
+  "description": "Minneriya National Park in Sri Lanka is home to the world's largest seasonal <br> gathering of wild elephants. According to Lonely Planet, this phenomena, known as The Gathering, attracts herds of up to 400 elephants, making it a top wildlife spectacle.",
+  "description2": "Among Sri Lanka's 26 national parks, Udawalawe National Park is the only one that assures<br> elephant sightings on every visit. This park is a wildlife enthusiast's paradise, providing a rare opportunity to see the country's beautiful elephants in their native habitat.",
+  "btnUrl2": "Animals in sri lanka.html"
+  
+  
+},
+
+{
+  "title": "The Predator",
+  "description": "Yala National Park, recognized for its unprecedented leopard density, is the greatest place to see Sri Lanka's wildlife jewel, the Sri Lankan leopard. Leopards, which are normally elusive, are frequently sighted in Block 1, with one per square kilometer.",
+  "description2": "Aside from leopards, Sri Lanka is home to a variety of wildcats, including jungle cats, civet cats, and rusty-spotted cats. These various species contribute to the unique tapestry of wildlife found in Sri Lanka's environment.",
+  "btnUrl2": "Sri lankan leopard.html"
+
+},
+
+{
+  "title": "Jewelries of the sky",
+  "description": "Sri Lanka is a birder's delight, with hundreds of sanctuaries and Important Bird Areas. Kumana and Bundala National Parks are important birding destinations, with sightings of nearly every Sri Lankan bird species.",
+  "description2": "The Sinharaja Bird Wave is a well-known attraction that showcases the island's largest and most extensively studied bird waves. This makes Sri Lanka a great destination for people interested in seeing various avifauna.",
+  "btnUrl2": "Animals in sri lanka.html"
+}
+
+]
+  
